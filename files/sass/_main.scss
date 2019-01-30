@@ -1,0 +1,336 @@
+body{
+	background: #b14a1e;
+	color: $bege;
+	padding-top: 0px;
+
+	@media (max-width: 768px){
+		padding-top: 65px;
+	}
+}
+
+.display-desktop{
+	display: block;
+
+	@media (max-width: 768px){
+		display: none;
+	}
+}
+
+.display-mobile{
+	display: none;
+
+	@media (max-width: 768px){
+		display: block;
+	}
+}
+
+.roboto{
+	font-family: 'Roboto', sans-serif;
+}
+
+.upper{
+	text-transform: uppercase;
+}
+
+.bege{
+	color: $bege;
+}
+
+.amarelo{
+	color: $amarelo;
+}
+
+.width100{
+	width: 100%;
+}
+
+.border-bottom{
+	border-bottom: 2px solid rgba($bege, 0.3);
+}
+
+.border-right{
+	border-right: 2px solid rgba($bege, 0.3);
+}
+
+section#banner{
+	background: url('https://institucional-statics-files.s3.amazonaws.com/banner_fimdeano_0.jpg') center -70px no-repeat #b14a1e;
+	background-size: cover;
+	min-height: 85vh;
+	padding-top: 115px;
+	width: 100%;
+	margin-top: -105px;
+
+	.fim-ano{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.antes-lista{
+		font-size: 17px;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	.select-estados{
+		height: 100px;
+	}
+
+	.lista-rest, .select-estados{
+		background: rgba(0, 0, 0, 0.5);
+		padding: 25px 30px;
+
+		.form-control{
+			width: 400px;
+			height: 60px;
+			background: rgba(0, 0, 0, 0.5);
+			color: $bege;
+			text-transform: uppercase;
+			border: 1px solid #444;
+			border-radius: 10px;
+			margin: 0 auto 25px;
+
+			&:focus{
+				box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0), 0 0 8px rgba(0, 0, 0, 0.0);
+			}
+		}
+
+		.restaurantes{
+			height: 260px;
+			margin-left: 25%;
+			overflow: auto;
+	
+			&::-webkit-scrollbar{
+				width: 8px;
+				background: transparent;
+			}
+			&::-webkit-scrollbar-thumb{
+				background: rgba(255, 255, 255, 0.3);
+				border-radius: 5px;
+			}
+			#table-lojas{
+				width: 100%;
+				overflow: auto;
+	
+				tr{
+					border-top: 2px solid rgba($bege, 0.3);
+					border-bottom: 2px solid rgba($bege, 0.3);
+					p{
+						margin: 10px 0;
+					}
+					.state{
+						text-transform: uppercase;
+						padding-left: 10px;
+					}
+					.shopping{
+						cursor: pointer;
+					}
+				}
+			}
+		}
+
+		.horarios{
+			text-align: center;
+			padding: 0px 20px;
+			position: relative;
+
+			#fecha-rest{
+				display: inline-block;
+				border: 2px solid $bege;
+				padding: 3px 7px;
+				border-radius: 50%;
+				position: absolute;
+				top: -50px;
+				right: 20px;
+				cursor: pointer;
+			}
+
+			.row{
+				margin: 0;
+			}
+
+			.nome-rest-total{
+				font-size: 30.5px;
+				font-weight: 700;
+				margin-top: 0;
+			}
+
+			h4{
+				font-size: 37px;
+				font-weight: 700;
+				margin: 0;
+			}
+
+			p{
+				font-size: 16px;
+			}
+
+			a{
+				width: 180px;
+				height: 55px;
+				background-color: transparent;
+				padding: 15px 25px;
+				margin-top: 30px;
+				border: 2px solid $bege;
+				transition: all .2s ease-in-out;
+				&:hover{
+					color: rgba(#000000, 1);
+					background-color: rgba($bege, 0.6);
+				}
+			}
+		}
+	}
+
+	.beber-dirija{
+		h6{
+			font-size: 13px;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin: 0;
+		}
+		p{
+			font-size: 9px;
+			text-transform: uppercase;
+		}
+	}
+
+	@media (max-width: 1400px){
+		background: url('https://institucional-statics-files.s3.amazonaws.com/banner_fimdeano_0.jpg') center 0px no-repeat #b14a1e;
+		background-size: cover;
+
+		.fim-ano{
+			max-width: 350px;
+		}
+
+		.confira{
+			max-width: 350px;
+		}
+
+		.beber-dirija{
+			margin-top: 30px;
+		}
+	}
+
+	@media (max-width: 1200px){
+		background-size: cover;
+	}
+
+	@media (max-width: 992px){
+		background: url('https://institucional-statics-files.s3.amazonaws.com/banner_fimdeano_0.jpg') center 0px no-repeat #b14a1e;
+		background-size: cover;
+		padding-top: 115px;
+
+		.lista-rest, .select-estados{
+			.restaurantes{
+				margin-left: 0;
+			}
+		}
+
+		.beber-dirija{
+			display: inline-block;
+			background: rgba(0, 0, 0, 0.3);
+			padding: 10px 10px 0px;
+			border-radius: 15px;
+		}
+	}
+
+	@media (max-width: 850px){
+		background-size: 250%;
+	}
+
+	@media (max-width: 768px){
+		background: url('https://institucional-statics-files.s3.amazonaws.com/banner_fimdeano_mobile.jpg') center top no-repeat #000000;
+		background-size: 100%;
+		padding-top: 95px;
+		min-height: 400px;
+		position: relative;
+	}
+
+	@media (max-width: 500px){
+		background: url('https://institucional-statics-files.s3.amazonaws.com/banner_fimdeano_mobile.jpg') center bottom no-repeat #000000;
+		background-size: cover;
+
+		.lista-rest, .select-estados{
+			.form-control{
+				width: 200px;
+				height: 70px;
+			}
+		}
+	}
+
+	@media (max-width: 450px){
+		.lista-rest, .select-estados{
+			.horarios{
+				p{
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 400px){
+		.fim-ano{
+			max-width: 260px;
+		}
+		.confira{
+			max-width: 295px;
+		}
+		.antes-lista{
+			font-size: 15px;
+		}
+		.lista-rest, .select-estados{
+			.horarios{
+				.nome-rest-total{
+					font-size: 26px;
+				}
+				h4{
+					font-size: 35px;
+				}
+				p{
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+
+section#espaco{
+	margin-top: 30px;
+	text-align: center;
+
+	img.wait{
+		margin-bottom: 60px;
+	}
+
+	a{
+		display: inline-block;
+		margin: 0 auto;
+		margin-bottom: 35px;
+		text-align: center;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		color: #e1daba;
+		text-transform: uppercase;
+		padding: 15px 20px 15px 20px;
+		font-size: 18px;
+		border: 2px solid #e1daba;
+		border-radius: 3px;
+		text-decoration: none;
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-o-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+		&:hover{
+			text-decoration: none;
+    		box-shadow: #e1daba 0 0px 0px 6px inset;
+		}
+	}
+	@media (max-width: 768px){
+		margin-top: 40px;
+	}
+	@media (max-width: 768px){
+		a{
+			padding: 8px 13px;
+    		font-size: 15px;
+		}
+	}
+}

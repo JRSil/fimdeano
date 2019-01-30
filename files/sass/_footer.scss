@@ -1,0 +1,38 @@
+footer{
+	text-align: center;
+	padding: 30px 0px 30px 0px;
+
+	img.logo-footer{
+		margin: 40px auto 60px;
+	}
+
+	img.separator{
+		margin: 40px auto;
+	}
+
+	p{
+		color: $bege;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+		font-size: 15px;
+		@include transition();
+		a{
+			color: $bege;
+			&:hover{
+				color: $bege;
+			}
+		}
+	}
+
+	.redes-sociais-footer{
+		display: inline-block;
+		margin-top: 50px;
+		ul.nav.navbar-nav{
+			margin: 0 auto;
+			a{
+				display: inline-block;
+				margin: 10px;
+			}
+		}
+	}
+}
